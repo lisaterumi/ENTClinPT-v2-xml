@@ -96,14 +96,14 @@ def predictALLSentenceBERT(sentencas,MODELS_DIR):
 
     result=''
     temLabel=0
+    fechaTag=0
+    nomeTag='entidade'
 
     for i, sentenca in enumerate(sentencas_tokenized):
         if len(sentenca)<1:
             continue
 
 
-        fechaTag=0
-        nomeTag='entidade'
 
         for j, token in enumerate(sentenca):
 	        temLabel=0
